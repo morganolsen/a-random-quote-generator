@@ -69,6 +69,29 @@ function getRandomQuote() {
  * `printQuote` function
 ***/
 
+/**
+ * Prints a random quote to the website.
+ * @returns the full HJTML string displaying a random quote.
+ */
+
+function printQuote() {
+  const quote = getRandomQuote();
+  let html = '';
+  html += `
+    <p class="quote">${quote.quote}</p>
+    <p class="source">${quote.source}
+  `;
+
+  if(quote.citation){
+    html += `<span class="citation">${quote.citation}</span>`  
+  }
+  if(quote.year){
+    html += `<span class="citation">${quote.year}</span>`  
+  }
+  html += `</p>`
+  return html;
+}
+
 
 /***
  * click event listener for the print quote button
