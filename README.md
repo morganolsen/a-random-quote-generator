@@ -1,2 +1,3 @@
 # Techdegree Project 1
- Techdegree project 1
+ This is my first techdegree project: a quote generator.
+
