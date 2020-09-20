@@ -44,11 +44,25 @@ const quotes = [
   }
 ]
 
+console.log(quotes);
+
 
 /***
  * `getRandomQuote` function
 ***/
 
+/**
+ * Retreives a random quote from the array quotes
+ * @returns {object} quote
+ */
+
+function getRandomQuote() {
+  const randomNumber = Math.random();
+
+  // Selects a random number between 0 and the highest possible index of quotes
+  const index = Math.floor(randomNumber * quotes.length);
+  return quotes[index];
+}
 
 
 /***
